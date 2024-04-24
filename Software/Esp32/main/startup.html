@@ -1,0 +1,41 @@
+<style>
+    *{
+        margin-top: 1rem;
+    }
+    input{
+        width: 20rem;
+        max-width: 100%;
+    }
+</style>
+<body>
+    <section style="margin-left: auto; box-sizing: border-box; padding: 3rem; margin-top: 5rem; border-width: 2px; outline-style: solid; margin-right: auto; width:70dvw; height:80dvh; border-radius: 10px; background-color: azure;">
+        <a href="/refresh"><button>refresh network list</button></a><br>
+        <div style="width:80%; outline-style: solid; height:40%; background-color: white;">
+            
+        </div>
+        <input id="ssid" placeholder="ssid" type="text"><br>
+        <input id="password" placeholder="password (leave blank if open)" type="password"><br>
+        <input type="button" value="Submit" onclick="submitNetwork">
+    </section>
+
+    <script>
+        function submitNetwork(){
+            var ssid = document.getElementById("ssid").value;
+            var password = document.getElementById("password").value;
+            sendString(ssid+"\n"+password);
+        }
+        function sendString(string){
+            const xhr = new XMLHttpRequest();
+            xhr.open("POST", "/connectNetwork");
+            const body = string;
+            xhr.onload = () => {
+            if (xhr.readyState == 4 && xhr.status == 201) {
+                console.log("Success!");
+            } else {
+                console.log(`Error: ${xhr.status}`);
+            }
+            };
+            xhr.send(body);
+        }
+    </script>
+</body>
