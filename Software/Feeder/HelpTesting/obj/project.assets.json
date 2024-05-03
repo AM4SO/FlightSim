@@ -8,34 +8,24 @@
     "net6.0": []
   },
   "packageFolders": {
-    "C:\\Users\\daany\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "/home/daanyal/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\HelpTesting\\HelpTesting.csproj",
+      "projectUniqueName": "/home/daanyal/Documents/GitHub/FlightSim/Software/Feeder/HelpTesting/HelpTesting.csproj",
       "projectName": "HelpTesting",
-      "projectPath": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\HelpTesting\\HelpTesting.csproj",
-      "packagesPath": "C:\\Users\\daany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\HelpTesting\\obj\\",
+      "projectPath": "/home/daanyal/Documents/GitHub/FlightSim/Software/Feeder/HelpTesting/HelpTesting.csproj",
+      "packagesPath": "/home/daanyal/.nuget/packages/",
+      "outputPath": "/home/daanyal/Documents/GitHub/FlightSim/Software/Feeder/HelpTesting/obj/",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\daany\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "/home/daanyal/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "net6.0"
       ],
       "sources": {
-        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -59,8 +49,7 @@
           "net47",
           "net471",
           "net472",
-          "net48",
-          "net481"
+          "net48"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -69,7 +58,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/lib/dotnet/sdk/6.0.127/RuntimeIdentifierGraph.json"
       }
     }
   }
