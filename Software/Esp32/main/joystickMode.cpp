@@ -37,3 +37,7 @@ void JoystickProgram::setup(){
 
   connectToNetwork();
 }
+
+void JoystickProgram::loop(){
+
+}
