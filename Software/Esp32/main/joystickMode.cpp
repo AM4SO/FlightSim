@@ -1,4 +1,5 @@
-#include "WiFiType.h"
+#include "IPAddress.h"
+#include "AsyncUDP.h"
 #include "joystickMode.h"
 
 JoystickProgram::JoystickProgram(){
@@ -11,23 +12,7 @@ void JoystickProgram::getNetworkCredentials(){
   wifi_password = "Chadwick";
 }
 
-void JoystickProgram::scanFullNetConfig(){
-  WiFi.scanNetworks(wifi_ssid);
-  int numNets = WiFi.scanComplete();
-  if (numNets == -2 || numNets == 0){
-    Serial.print("Scan failed...:    ");
-    Serial.println(numNets);
-    return;
-  }
-
-  wifi_channel = WiFi.channel(0);
-
-  WiFi.scanDelete();
-}
-
 bool JoystickProgram::connectToNetwork(){
-  //scanFullNetConfig();
-
   Serial.println("Connecting to wifi...");
 
   WiFi.begin(wifi_ssid, wifi_password);
@@ -52,6 +37,32 @@ bool JoystickProgram::connectToNetwork(){
   return true;
 }
 
+void JoystickProgram::pairServer(){
+  // keep sending packets to the feeder multicast group
+  // Feeder receives and knows our address
+  // Feeder keeps sending back packets
+  // We receive a packet, then stop sending packets: we know the remote address.
+  // We start sending joystick inputs to the feeder
+  // Feeder receives inputs, and now stops sending packets.
+  // If forcefeedback is available, feeder will send FF to us on a different port.
+
+  //udpListener.listen(25576);
+  
+  if (udpSender.connect(WiFi.broadcastIP(), 4446)){//IPAddress(224,0,2,60)
+    udpSender.onPacket([](AsyncUDPPacket packet){
+      Serial.print("Packet Received from ");
+      Serial.print(packet.remoteIP());
+      Serial.print(":");
+      Serial.println(packet.remotePort());
+    });
+    while(true){
+      udpSender.print("hello?");
+      delay(1000);
+    }
+  }
+  
+}
+
 void JoystickProgram::setup(){
   Serial.println();
   Serial.println("Joystick program starting...");
@@ -60,6 +71,8 @@ void JoystickProgram::setup(){
   Serial.println("Got network credentials");
 
   connectToNetwork();
+
+  pairServer();
 }
 
 void JoystickProgram::loop(){

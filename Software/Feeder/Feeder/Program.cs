@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using Microsoft.VisualBasic;
+using System.Diagnostics;
 using System.Net;
 using System.Net.Sockets;
 using System.Text;
@@ -10,7 +11,8 @@ namespace Feeder
         static UdpClient udpClient;
         static void Main(string[] args)
         {
-            udpClient = new UdpClient(25575);
+            udpClient = new UdpClient(4446);
+            udpClient.JoinMulticastGroup(IPAddress.Parse("224.0.2.60")); // 4446
 
             Console.WriteLine("Listening...");
             startListen();
@@ -23,9 +25,8 @@ namespace Feeder
                 IPEndPoint endPoint = new IPEndPoint(IPAddress.Any, 0);
                 byte[] results = udpClient.Receive(ref endPoint);
 
-                Console.Write("Received packets from end point: ");
-                Console.WriteLine(endPoint.Address.ToString() + " " + endPoint.Port);
-                Console.WriteLine("Received: " + Encoding.ASCII.GetString(results));
+                Console.Write(" " + endPoint.Address.ToString() + ":" + endPoint.Port + " @ " + DateTime.Now.TimeOfDay.ToString().Substring(0,8) + ": ");
+                Console.WriteLine(Encoding.ASCII.GetString(results));
             }
         }
     }

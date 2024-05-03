@@ -16,7 +16,7 @@ namespace HelpTesting
             while (true)
             {
                 Console.WriteLine("Sending...");
-                udpClient.Send(message, message.Length, new IPEndPoint(IPAddress.Broadcast, 25575));
+                udpClient.Send(message, message.Length, new IPEndPoint(IPAddress.Parse("224.0.2.60"), 4446));
 
                 Thread.Sleep(1000);
             }
