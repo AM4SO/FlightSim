@@ -1,0 +1,41 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "BluetoothFeeder/1.0.0": {
+        "dependencies": {
+          "Plugin.BLE": "3.1.0"
+        },
+        "runtime": {
+          "BluetoothFeeder.dll": {}
+        }
+      },
+      "Plugin.BLE/3.1.0": {
+        "runtime": {
+          "lib/netstandard2.0/Plugin.BLE.dll": {
+            "assemblyVersion": "3.1.0.0",
+            "fileVersion": "3.1.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "BluetoothFeeder/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Plugin.BLE/3.1.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-vKwCqysb0FvPsF2pmNL5Qdw2WI+GwlUyF6U56Au6F7y3f2cnhec9RWD1XZg74zRk10LcGibwiRXoJLl5ry8XHw==",
+      "path": "plugin.ble/3.1.0",
+      "hashPath": "plugin.ble.3.1.0.nupkg.sha512"
+    }
+  }
+}

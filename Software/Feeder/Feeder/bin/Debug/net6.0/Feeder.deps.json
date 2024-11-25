@@ -7,8 +7,19 @@
   "targets": {
     ".NETCoreApp,Version=v6.0": {
       "Feeder/1.0.0": {
+        "dependencies": {
+          "vJoyInterfaceWrap": "0.2.1.6"
+        },
         "runtime": {
           "Feeder.dll": {}
+        }
+      },
+      "vJoyInterfaceWrap/0.2.1.6": {
+        "runtime": {
+          "vJoyInterfaceWrap.dll": {
+            "assemblyVersion": "0.2.1.6",
+            "fileVersion": "2.1.6.999"
+          }
         }
       }
     }
@@ -16,6 +27,11 @@
   "libraries": {
     "Feeder/1.0.0": {
       "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "vJoyInterfaceWrap/0.2.1.6": {
+      "type": "reference",
       "serviceable": false,
       "sha512": ""
     }

@@ -27,3 +27,17 @@ C:/Users/daany/OneDrive - University of Leicester/Engineering/FlightSim/Software
 /home/daanyal/Documents/GitHub/FlightSim/Software/Feeder/HelpTesting/obj/Debug/net6.0/ref/HelpTesting.dll
 /home/daanyal/Documents/GitHub/FlightSim/Software/Feeder/HelpTesting/obj/Debug/net6.0/HelpTesting.pdb
 /home/daanyal/Documents/GitHub/FlightSim/Software/Feeder/HelpTesting/obj/Debug/net6.0/HelpTesting.genruntimeconfig.cache
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\bin\Debug\net6.0\HelpTesting.exe
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\bin\Debug\net6.0\HelpTesting.deps.json
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\bin\Debug\net6.0\HelpTesting.runtimeconfig.json
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\bin\Debug\net6.0\HelpTesting.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\bin\Debug\net6.0\HelpTesting.pdb
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\HelpTesting.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\HelpTesting.AssemblyInfoInputs.cache
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\HelpTesting.AssemblyInfo.cs
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\HelpTesting.csproj.CoreCompileInputs.cache
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\HelpTesting.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\refint\HelpTesting.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\HelpTesting.pdb
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\HelpTesting.genruntimeconfig.cache
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\Feeder\HelpTesting\obj\Debug\net6.0\ref\HelpTesting.dll

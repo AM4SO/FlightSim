@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "hZOopHM8EBiGHvdkiNMX8GiTTLhUtCll4Wp0oarq81nMX1rDz0oC+vVU0GiSNxgAkimCk6dueLbVZSwuGY2asA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\BluetoothFeeder\\BluetoothFeeder\\BluetoothFeeder.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\daany\\.nuget\\packages\\plugin.ble\\3.1.0\\plugin.ble.3.1.0.nupkg.sha512"
+  ],
+  "logs": []
+}

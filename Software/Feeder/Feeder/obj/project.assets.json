@@ -15,11 +15,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\Feeder\\Feeder.csproj",
+      "projectUniqueName": "E:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\Feeder\\Feeder.csproj",
       "projectName": "Feeder",
-      "projectPath": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\Feeder\\Feeder.csproj",
+      "projectPath": "E:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\Feeder\\Feeder.csproj",
       "packagesPath": "C:\\Users\\daany\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\Feeder\\obj\\",
+      "outputPath": "E:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\Feeder\\Feeder\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",

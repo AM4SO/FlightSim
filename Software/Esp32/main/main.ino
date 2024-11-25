@@ -7,8 +7,8 @@ JoystickProgram* joystickProgram = 0;
 bool hasNetworkDetails;
 
 void setup() {
-  EEPROM.begin(512);
-  Serial.begin(921600);
+  EEPROM.begin(256);
+  Serial.begin(115200);
 
   /*
   int len = EEPROM.length();
@@ -18,7 +18,8 @@ void setup() {
   EEPROM.commit();
   */
   
-  hasNetworkDetails = EEPROM.read(0) == 0; //TODO: CHANGE THIS BACK TO x > 0
+  hasNetworkDetails = EEPROM.read(0) > 0; //TODO: CHANGE THIS BACK TO x > 0
+  EEPROM.end();
   if (!hasNetworkDetails){
     networkConnectProgram = new NetworkConnectProgram();
     networkConnectProgram->setup();

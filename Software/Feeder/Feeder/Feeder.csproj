@@ -7,4 +7,11 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Reference Include="vJoyInterfaceWrap">
+      <HintPath>vJoyInterfaceWrap.dll</HintPath>
+      <HintPath>vJoyInterface.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>

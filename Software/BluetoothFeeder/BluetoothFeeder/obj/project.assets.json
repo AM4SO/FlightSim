@@ -1,0 +1,155 @@
+{
+  "version": 3,
+  "targets": {
+    "net6.0": {
+      "Plugin.BLE/3.1.0": {
+        "type": "package",
+        "compile": {
+          "lib/netstandard2.0/Plugin.BLE.dll": {
+            "related": ".pdb;.xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Plugin.BLE.dll": {
+            "related": ".pdb;.xml"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Plugin.BLE/3.1.0": {
+      "sha512": "vKwCqysb0FvPsF2pmNL5Qdw2WI+GwlUyF6U56Au6F7y3f2cnhec9RWD1XZg74zRk10LcGibwiRXoJLl5ry8XHw==",
+      "type": "package",
+      "path": "plugin.ble/3.1.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "icon_small.png",
+        "lib/monoandroid13.0/Plugin.BLE.dll",
+        "lib/monoandroid13.0/Plugin.BLE.pdb",
+        "lib/monoandroid13.0/Plugin.BLE.xml",
+        "lib/net7.0-android33.0/Plugin.BLE.dll",
+        "lib/net7.0-android33.0/Plugin.BLE.pdb",
+        "lib/net7.0-android33.0/Plugin.BLE.xml",
+        "lib/net7.0-ios16.1/Plugin.BLE.dll",
+        "lib/net7.0-ios16.1/Plugin.BLE.pdb",
+        "lib/net7.0-ios16.1/Plugin.BLE.xml",
+        "lib/net7.0-maccatalyst16.1/Plugin.BLE.dll",
+        "lib/net7.0-maccatalyst16.1/Plugin.BLE.pdb",
+        "lib/net7.0-maccatalyst16.1/Plugin.BLE.xml",
+        "lib/net7.0-windows10.0.19041/Plugin.BLE.dll",
+        "lib/net7.0-windows10.0.19041/Plugin.BLE.pdb",
+        "lib/net7.0-windows10.0.19041/Plugin.BLE.xml",
+        "lib/net8.0-android34.0/Plugin.BLE.dll",
+        "lib/net8.0-android34.0/Plugin.BLE.pdb",
+        "lib/net8.0-android34.0/Plugin.BLE.xml",
+        "lib/net8.0-ios17.2/Plugin.BLE.dll",
+        "lib/net8.0-ios17.2/Plugin.BLE.pdb",
+        "lib/net8.0-ios17.2/Plugin.BLE.xml",
+        "lib/net8.0-maccatalyst17.2/Plugin.BLE.dll",
+        "lib/net8.0-maccatalyst17.2/Plugin.BLE.pdb",
+        "lib/net8.0-maccatalyst17.2/Plugin.BLE.xml",
+        "lib/net8.0-windows10.0.19041/Plugin.BLE.dll",
+        "lib/net8.0-windows10.0.19041/Plugin.BLE.pdb",
+        "lib/net8.0-windows10.0.19041/Plugin.BLE.xml",
+        "lib/net8.0-windows10.0.22000/Plugin.BLE.dll",
+        "lib/net8.0-windows10.0.22000/Plugin.BLE.pdb",
+        "lib/net8.0-windows10.0.22000/Plugin.BLE.xml",
+        "lib/netstandard2.0/Plugin.BLE.dll",
+        "lib/netstandard2.0/Plugin.BLE.pdb",
+        "lib/netstandard2.0/Plugin.BLE.xml",
+        "lib/uap10.0.17763/Plugin.BLE.dll",
+        "lib/uap10.0.17763/Plugin.BLE.pdb",
+        "lib/uap10.0.17763/Plugin.BLE.pri",
+        "lib/uap10.0.17763/Plugin.BLE.xml",
+        "lib/xamarinios10/Plugin.BLE.dll",
+        "lib/xamarinios10/Plugin.BLE.pdb",
+        "lib/xamarinios10/Plugin.BLE.xml",
+        "lib/xamarinmac20/Plugin.BLE.dll",
+        "lib/xamarinmac20/Plugin.BLE.pdb",
+        "lib/xamarinmac20/Plugin.BLE.xml",
+        "plugin.ble.3.1.0.nupkg.sha512",
+        "plugin.ble.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    "net6.0": [
+      "Plugin.BLE >= 3.1.0"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\daany\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\BluetoothFeeder\\BluetoothFeeder\\BluetoothFeeder.csproj",
+      "projectName": "BluetoothFeeder",
+      "projectPath": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\BluetoothFeeder\\BluetoothFeeder\\BluetoothFeeder.csproj",
+      "packagesPath": "C:\\Users\\daany\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\daany\\OneDrive - University of Leicester\\Engineering\\FlightSim\\Software\\BluetoothFeeder\\BluetoothFeeder\\obj\\",
+      "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
+      "configFilePaths": [
+        "C:\\Users\\daany\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net6.0"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net6.0": {
+          "targetAlias": "net6.0",
+          "projectReferences": {}
+        }
+      },
+      "warningProperties": {
+        "warnAsError": [
+          "NU1605"
+        ]
+      }
+    },
+    "frameworks": {
+      "net6.0": {
+        "targetAlias": "net6.0",
+        "dependencies": {
+          "Plugin.BLE": {
+            "target": "Package",
+            "version": "[3.1.0, )"
+          }
+        },
+        "imports": [
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48",
+          "net481"
+        ],
+        "assetTargetFallback": true,
+        "warn": true,
+        "frameworkReferences": {
+          "Microsoft.NETCore.App": {
+            "privateAssets": "all"
+          }
+        },
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.401\\RuntimeIdentifierGraph.json"
+      }
+    }
+  }
+}

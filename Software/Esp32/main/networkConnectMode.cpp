@@ -3,7 +3,9 @@
 NetworkConnectProgram::NetworkConnectProgram(){
   ssid = "JoystickPrototype";
   password = "Joystick";
-  webPageP0 = "<!DOCTYPE html><html><head><style>*{margin-top: 1rem;}input{width: 20rem;max-width: 100%;}</style></head><body><script>function submitNetwork(){var ssid = document.getElementById('ssid').value;var password = document.getElementById('password').value;sendString(ssid+'\\n'+password);}function sendString(string){const xhr = new XMLHttpRequest();xhr.open('POST', '/');const body = string;xhr.onload = () => {if (xhr.readyState == 4 && xhr.status == 201) {console.log('Success!');} else {console.log(`Error: ${xhr.status}`);}};xhr.send(body);}</script><section style='margin-left: auto; box-sizing: border-box; padding: 3rem; margin-top: 5rem; border-width: 2px; outline-style: solid; margin-right: auto; width:70dvw; height:80dvh; border-radius: 10px; background-color: azure;'><a href='/'><button>refresh network list</button></a><br><div style='width:80%; outline-style: solid; height:40%; background-color: white;'>";
+  webPageP0 = "<!DOCTYPE html><html><head><style>*{margin-top: 1rem;}input{width: 20rem;max-width: 100%;}</style></head><body><script>function submitNetwork(){var ssid = document.getElementById('ssid').value;var password = document.getElementById('password').value;sendString(ssid+'\\n'+password);}function sendString(string){const xhr = new XMLHttpRequest();xhr.open('POST', '/');\
+  const body = string;xhr.onload = () => {if (xhr.readyState == 4 && xhr.status == 201) {console.log('Success!');} else {console.log(`Error: ${xhr.status}`);}};xhr.send(body);}</script><section style='margin-left: auto; box-sizing: border-box; padding: 3rem; margin-top: 5rem; border-width: 2px; outline-style: solid; margin-right: auto; width:70dvw; height:80dvh;\
+  border-radius: 10px; background-color: azure;'><a href='/'><button>refresh network list</button></a><br><div style='width:80%; outline-style: solid; height:40%; background-color: white;'>";
   webPageP1 = "</div><input id='ssid' placeholder='ssid' type='text'><br><input id='password' placeholder='password (leave blank if open)' type='password'><br><input type='button' value='Submit' onclick='submitNetwork()'></section></body></html>";
   networkListString = "";
   server = new WiFiServer(80);
@@ -57,15 +59,22 @@ void NetworkConnectProgram::doPost(WiFiClient* client, int bodyLength){
   if (ssid.length() == 0 || ssid.length() > 32)
     return; // Invalid ssid received
 
+  EEPROM.begin(256);
+  int EEPROM_PTR = 0;
+
   ////////////////// Write ssid and password to EEPROM ////////////////
-  EEPROM.write(0, (uint8_t) ssid.length()); // Write ssid length
-  EEPROM.write(1, (uint8_t) password.length()); /// Write password length
+  EEPROM.write(EEPROM_PTR++, (uint8_t) ssid.length()); // Write ssid length
+  EEPROM.write(EEPROM_PTR++, (uint8_t) password.length()); /// Write password length
+  
+  for (int i = 0; i < ssid.length(); i++){
+    EEPROM.writeByte(EEPROM_PTR++, (uint8_t) ssid.charAt(i));
+  }
+  for (int i = 0; i < password.length(); i++){
+    EEPROM.writeByte(EEPROM_PTR++, (uint8_t) password.charAt(i));
+  }
 
-  int ssidAddress = 2;
-  int passwordAddress = ssidAddress + EEPROM.writeString(ssidAddress, ssid);
-  EEPROM.writeString(passwordAddress, password);
-
-  //EEPROM.commit();
+  EEPROM.commit();
+  EEPROM.end();
 
   ESP.restart();
 }

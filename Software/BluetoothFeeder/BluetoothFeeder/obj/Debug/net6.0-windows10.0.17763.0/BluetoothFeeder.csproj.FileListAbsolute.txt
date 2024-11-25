@@ -1,0 +1,17 @@
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\bin\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.exe
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\bin\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.deps.json
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\bin\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.runtimeconfig.json
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\bin\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\bin\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.pdb
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\bin\Debug\net6.0-windows10.0.17763.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\bin\Debug\net6.0-windows10.0.17763.0\WinRT.Runtime.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.AssemblyInfoInputs.cache
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.AssemblyInfo.cs
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.csproj.CoreCompileInputs.cache
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.csproj.CopyComplete
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\refint\BluetoothFeeder.dll
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.pdb
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\BluetoothFeeder.genruntimeconfig.cache
+C:\Users\daany\OneDrive - University of Leicester\Engineering\FlightSim\Software\BluetoothFeeder\BluetoothFeeder\obj\Debug\net6.0-windows10.0.17763.0\ref\BluetoothFeeder.dll
