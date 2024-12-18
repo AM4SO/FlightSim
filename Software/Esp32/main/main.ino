@@ -10,13 +10,15 @@ void setup() {
   EEPROM.begin(256);
   Serial.begin(115200);
 
-  /*
-  int len = EEPROM.length();
-  for (int i = 0; i < len; i++){
-    EEPROM.write(i, 0);
+  if (false && digitalRead(3) == 0){
+    Serial.println("EN button pressed. Resetting network configuration...");
+
+    int len = EEPROM.length();
+    for (int i = 0; i < len; i++){
+      EEPROM.write(i, 0);
+    }
+    EEPROM.commit();
   }
-  EEPROM.commit();
-  */
   
   hasNetworkDetails = EEPROM.read(0) > 0; //TODO: CHANGE THIS BACK TO x > 0
   EEPROM.end();

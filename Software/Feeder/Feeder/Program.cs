@@ -37,8 +37,8 @@ namespace Feeder
         static void Main(string[] args)
         {
             // Add the axes to be used
-            axes.Add(2, new Axis(HID_USAGES.HID_USAGE_Y ,"Y"));
-            axes.Add(1, new Axis(HID_USAGES.HID_USAGE_X ,"X"));
+            axes.Add(1, new Axis(HID_USAGES.HID_USAGE_Y ,"Y"));
+            axes.Add(2, new Axis(HID_USAGES.HID_USAGE_X ,"X"));
 
             // Join multicast group to allow joystick to find us
             udpClient.JoinMulticastGroup(IPAddress.Parse(MULTICAST_IP));
